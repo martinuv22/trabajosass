@@ -1,0 +1,83 @@
+/*Reset y atributos para todas las paginas*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: white; }
+
+h1 {
+  color: gold; }
+
+li {
+  transition: background 3s; }
+
+li:hover {
+  background-color: gold; }
+
+/*para index*/
+.div__imagen {
+  margin: auto;
+  border-radius: 20%;
+  object-fit: cover;
+  width: 47rem;
+  height: 23rem;
+  transition: height 1s, width 1s; }
+  .div__imagen:hover {
+    width: 55rem;
+    height: 31rem; }
+
+/*pagina info*/
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center; }
+  .frame__frase {
+    color: gold; }
+
+/* Pagina donde comprar carrousel*/
+.carousel__dondecomprar img {
+  height: 90vh; }
+
+/*pagina contacto*/
+.grilla__contacto {
+  display: grid;
+  grid-template-areas: "contenido3" "pie3";
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%; }
+
+.contenidos {
+  grid-area: contenido3; }
+
+.contenido__titulo {
+  color: #0606dd;
+  font-family: 'Kodchasan', sans-serif; }
+
+.contenido__sectionf {
+  color: #0606dd;
+  padding: 2rem 30%;
+  font-family: 'Poller One', cursive;
+  text-align: center;
+  color: goldenrod;
+  display: flex;
+  flex-direction: column;
+  height: 40rem; }
+
+.contenido__boton {
+  padding: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10%;
+  color: #0606dd;
+  background-color: goldenrod;
+  border: solid 0.5rem brown;
+  transition: padding 3s; }
+  .contenido__boton:hover {
+    padding: 2rem; }
+
+.pie__contacto {
+  grid-area: pie3; }

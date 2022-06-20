@@ -1,0 +1,14 @@
+/*para index*/
+
+.div__imagen {
+    margin: auto;
+    border-radius: 20%;
+    object-fit: cover;
+    width: 47rem;
+    height: 23rem;
+    transition: height 1s, width 1s;
+    &:hover {
+        width: 55rem;
+        height: 31rem;
+    }
+}

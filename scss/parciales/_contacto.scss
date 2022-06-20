@@ -1,0 +1,46 @@
+/*pagina contacto*/
+
+.grilla__contacto {
+    display: grid;
+    grid-template-areas: "contenido3" "pie3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+}
+
+.contenidos {
+    grid-area: contenido3;
+}
+
+.contenido {
+    &__titulo {
+        color: rgb(6, 6, 221);
+        font-family: 'Kodchasan', sans-serif;
+    }
+    &__sectionf {
+        color: rgb(6, 6, 221);
+        padding: 2rem 30%;
+        font-family: 'Poller One', cursive;
+        text-align: center;
+        color: goldenrod;
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+    }
+    &__boton {
+        padding: 1.2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 10%;
+        color: rgb(6, 6, 221);
+        background-color: goldenrod;
+        border: solid 0.5rem brown;
+        transition: padding 3s;
+        &:hover {
+            padding: 2rem;
+        }
+    }
+}
+
+.pie__contacto {
+    grid-area: pie3;
+}
